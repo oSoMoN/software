@@ -1,9 +1,9 @@
 name: cla-check
-on: [pull_request_target]
+on: [pull_request_target, workflow_dispatch]
 
 jobs:
   cla-check:
-    #if: github.head_ref != 'weblate-ubuntu-software-ubuntu-software'
+    # if: github.head_ref != 'weblate-ubuntu-software-ubuntu-software'
     runs-on: ubuntu-20.04
     steps:
       - name: Print info
